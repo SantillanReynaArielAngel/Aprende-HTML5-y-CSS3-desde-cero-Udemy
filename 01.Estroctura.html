@@ -30,8 +30,12 @@
     <a href="#"> Vinculo</a><!--Podemos realizar vinculos-->
     <br>
 
+    <figure><!--Nos sirve para maquetar las imagenes de nuestro docuemnto y asi organizar mejor nuesras imagenes-->
      <img src="./img/entrega-de-comida.png"> <!--Nos permite vincular imagenes en nuestro sitio-->
-    
+    </figure>
+    <figcaption>Hola soy un pie de pagina</figcaption><!--Sirve para colocar un pie de pagina  al la imagem-->
+
+
     <ol><!--es una lista ordenada (lista numerica)-->
         <li>Ariel</li>
         <li>Cristian</li>
@@ -45,41 +49,85 @@
     </ul>
 
     <table border="1"><!--Nos permite realizar tablas-->
-        <tr><!--Es una fila de la tabla-->
-            <th>MES</th><!--Es una columna que esta dentro de la fila-->
-            <th>AHORRO</th>
-            <th>MONEDA</th>
-        </tr>
-
-        <tr>
-            <th>Enero</th>
-            <th>1000</th>
-            <th>Bs</th>
-        </tr>
-
-        <tr>
-            <th>Febrero</th>
-            <th>2500</th>
-            <th>Bs</th>
-        </tr>
-
-        <tr>
-            <th>Marzo</th>
-            <th>200</th>
-            <th>$</th>
-        </tr>
-
+        <thead><!--Este es el cabezote de la tabla donde esta los titulos de la misma-->
+            <tr><!--Es una fila de la tabla-->
+                <th>MES</th><!--Es una columna que esta dentro de la fila-->
+                <th>AHORRO</th>
+                <th>MONEDA</th>
+            </tr>
+        </thead>
+        
+        <tbody><!--Este es el cueropo de la tabla, las columnas en el cuerpo se escriben con <td></td> en vez de <th></th>-->
+            <tr>
+                <td>Enero</td>
+                <td>1000</td>
+                <td>Bs</td>
+            </tr>
+    
+            <tr>
+                <td>Febrero</td>
+                <td>2500</td>
+                <td>Bs</td>
+            </tr>
+    
+            <tr>
+                <td>Marzo</td>
+                <td>200</td>
+                <td>$</td>
+            </tr>
+        </tbody>
+        
     </table>
 
-    <!--Ceando indicadores de valores con 'meter'-->
+    <!--Ceando indicadores de valores con 'meter'. 
+        Importante: algunas veces el navegador safary como dispositivos moviles no pueden leer esta etiquea-->
     <h1>Resultados del examen</h1>
     <p>Carlos: <meter value="94" min="0" max="100" higth="90"></meter></p><!--higth parra indicar el valr mas alto-->
     <p>Andres: <meter value="66" min="0" max="100" higth="90"></meter></p>
     <p>Ana: <meter value="85" min="0" max="100" higth="90"></meter></p>
     <p>Pedro: <meter value="45" min="0" max="100" higth="90"></meter></p>
 
+
+    <!--Etiqueta progress que es similar a meter-->
+    <h1>Resultados de Ventas</h1>
+    <p>Enero: <progress value="94" min="0" max="100"></progress></p>   
+    <p>Febrero: <progress value="66" min="0" max="100"></progress></p>
+    <p>Marzo: <progress value="85" min="0" max="100"></progress></p>
+    <p>Abril: <progress value="45" min="0" max="100"></progress></p>
+    
+    
+
     <!--Pie de pagina-->
     <footer>Este es el pie de pagina</footer><!--puede entrar quien desarrollo la pagina,año, etc-->
 
+
+    <!--Insertando audio. 
+        Los siguientes 3 son valores booleanos y por defecto estan como verdaderos
+        autoplay: para reproduccion automatica, 
+        controls: coloca controles al audio, 
+        loop: repite el audio indefinidamente,
+        preload: carga el audio junto con la pagina
+    
+    Nota: Los tipos de audio admitidos son 
+    .ogg(archivo comprimido), .mp3(archivo compromido) , 
+    .wav(archo sin compresion y muy pesasdo para el navegador), 
+    .m4a .m4b .mp4 .acc (compromido y con menor calidad de audio que mp3 )
+    
+    Importante: tener almenos el mismo audio en los formatos: m4a, mp3 y ogg para que el navegador y sistemas opetarivos puedan leer el que les sea por defecto
+-->
+    <audio  controls loop preload="auto"><!--autoplay quitamos este atributo para los sonidos no choquen con el video-->
+        <source src="./audio/Deadman Wonderland OST 1.mp3" type="audio/mp3">
+        <source src="./audio/Deadman Wonderland OST 1.mp4" type="audio/mp4">
+        <source src="./audio/Deadman Wonderland OST 1.ogg" type="audio/ogg">
+    </audio>
+
+    <video autoplay controls loop width="500" height="200"> <!--width para el ancho y height para el alto del video-->
+        <!--Extenciones recomendadas a tener son: .ogv, .mp4 y .webm(en safary y equipos ios no es mjy legible) -->
+        <source src="video/DNA2 opening.mp4" type="video/mp4">            
+        <source src="video/DNA2 opening.ogv" type="video/ogv">
+        <source src="video/DNA2 opening.webm" type="video/webm">
+    </video>
+
+    
 </body>
 </html>
