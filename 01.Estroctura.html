@@ -35,7 +35,6 @@
     </figure>
     <figcaption>Hola soy un pie de pagina</figcaption><!--Sirve para colocar un pie de pagina  al la imagem-->
 
-
     <ol><!--es una lista ordenada (lista numerica)-->
         <li>Ariel</li>
         <li>Cristian</li>
@@ -95,7 +94,7 @@
     <p>Marzo: <progress value="85" min="0" max="100"></progress></p>
     <p>Abril: <progress value="45" min="0" max="100"></progress></p>
     
-    
+        
 
     <!--Pie de pagina-->
     <footer>Este es el pie de pagina</footer><!--puede entrar quien desarrollo la pagina,año, etc-->
@@ -121,13 +120,29 @@
         <source src="./audio/Deadman Wonderland OST 1.ogg" type="audio/ogg">
     </audio>
 
-    <video autoplay controls loop width="500" height="200"> <!--width para el ancho y height para el alto del video-->
+    <video  controls loop width="500" height="200"> <!--width para el ancho y height para el alto del video, quitamos autoplay para los sonidos no choquen con el otro video-->
         <!--Extenciones recomendadas a tener son: .ogv, .mp4 y .webm(en safary y equipos ios no es mjy legible) -->
         <source src="video/DNA2 opening.mp4" type="video/mp4">            
         <source src="video/DNA2 opening.ogv" type="video/ogv">
         <source src="video/DNA2 opening.webm" type="video/webm">
     </video>
 
+
+    <!--iframe: Sirve para incrustar videos,audios,revistaas,mapas, entre otros recursos el internet.
+    Estos recursos muchas veces ya ofrecen el codigo ifreme para copiarlo, solo debemos conservar la etiqueta iframe y borrar lo que no nocesitamos-->
     
+    <!--Youtube-->
+    <iframe  width="500" height="200" src="https://www.youtube.com/embed/-eYK3YP524A" frameborder="0"  allowfullscreen></iframe> <!--allowfullscreen: permite que la opcion de pantalla completa-->
+    <!--vimeo-->
+    <iframe src="https://player.vimeo.com/video/163774371" width="500" height="200" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <!--Soung cloud-->
+    <iframe width="500" height="200"  frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/216317902&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    <!--calameo revistas-->
+    <iframe src="//v.calameo.com/?bkcode=000661008bed95fecdabe&mode=mini" width="500" height="200" frameborder="0"  allowtransparency allowfullscreen style="margin:0 auto;"></iframe>
+    <!--Mapas-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.354592065667!2d-65.26241508481824!3d-19.048141116410935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbcf36656fb06b%3A0x5e4f23584d3c808f!2sPlaza%2025%20de%20Mayo%2C%20Sucre!5e0!3m2!1ses!2sbo!4v1616595693584!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!--Paginas de internet-->
+    <iframe src="https://www3.animeflv.net/ver/one-punch-man-2nd-season-11" width="100%" heigth="600" frameborder="0"  scrolling="auto"></iframe>
+
 </body>
 </html>
