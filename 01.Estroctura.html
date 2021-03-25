@@ -11,10 +11,126 @@
 </head>
 <body>  <!-- es el cuerpo de la pagina y es visible para el navegador -->
     <!--El body pude tener diferente estroctura segun el diseño de la pagina a realizar-->
-    <header>Este el el cabezote(encabezamiento)</header>
+    <center> <!--center esta en desuso actualmente y para su efecto de centrear se utiliza css-->
+        <h3>Formulario</h3>
+        <form>
+            <!--Se tiene diferentes tipos de input que pueden ser utilizados, el atributo "required" en los inputs se utiliza para obligar que los campos tengan que ser llenados antes de enviar(presionar input type submit) el formulario-->
+            <label for="texto">Click aqui papra escribir</label> <!--la propiedad form se utilizar para referencias y seleccionar un formulario atravez de su id-->
+            <input id="texto" type="text" placeholder="Escriba aqui" value="" required ><!--el atributo "readonly" hace que el texto imput no pueda ser modificado, es decir solo de lectura-->
+            <br>
+            <br>
+            <label for="correo">ingrese su correo</label>
+            <input id="correo" type="email" placeholder="Su correo..." value="" required></input> <!--este tipo de input nos obliga a respetar el formato de un correo electronico-->
+            <br>
+            <br>
+            <label for="password">ingrese su contraseña</label>
+            <input id="password" type="password" placeholder="Su contraseña" value="" required></input>
+            <br>
+            <br>
+            <label for="numeros">ingrese su correo</label>
+            <input id="numeros" type="number" value="1" min="0" max="10"></input><!--Se puede establecer un rango de numeros com min y max-->
+            <br>
+            <br>
+            <label for="calendario">ingrese una fecha</label>
+            <input id="calendario" type="date">
+            <br>
+            <br>
+            <label for="datatime_local">Hora y fecha local</label>
+            <input id="datatime_local" type="datetime-local">
+            <br>
+            <br>
+            <label for="mes">Mes</label>
+            <input id="mes" type="month">
+            <br>
+            <br>
+            <label for="color">Seleccionar color</label>
+            <input id="color" type="color">
+            <br>
+            <br>
+            <label for="archivo">Archivo</label>
+            <input id="archivo" type="file">
+            <br>
+            <br>
+            <label for="arroz">Arroz</label> <input id="arroz" type="checkbox">
+            <label for="azucar">Azucar</label> <input id="azucar" type="checkbox">
+            <label for="fideo">Fideo</label> <input id="fideo" type="checkbox">
+            <br>
+            <br>
+            <!--Para el input tipo RADIO el atributo name debe ser igual en todos para que solo 1 sea seleccionado--> 
+            <label for="hombre">Hombre</label> <input id="hombre" name="sexo"  type="radio" checked> <!--el atributo checked se utiliza para que un radio este selecionado por default, ys oslo puede ser empleado en 1 input-->
+            <label for="mujer">Mujer</label> <input id="mujer" name="sexo" type="radio" > 
+            <br>
+            <br>
+            <label for="imagen">Imagen</label>
+            <input id="imagen" type="image">
+            <br>
+            <br>
+            <label for="rango">rango</label>
+            <input id="rango" type="range" value="10">
+            <br>
+            <br>
+            <label for="reset">reiniciar</label>
+            <input id="reset" type="reset">
+            <br>
+            <br>
+            <label for="seacrh">Buscar</label>
+            <input id="seacrh" type="search">
+            <br>
+            <br>
+            <label for="submit">Boton enviar</label><!--Aqio no es necesario el label-->
+            <input id="submit" type="submit" value="Enviar Formulario"> <!--Por default el value es "enviar" si es que no lo especificamos-->
+            <br>
+            <br>
+            <!--Lista telefonica-->
+            <label for="lista_telefonos1">Numero de contacto:</label>
+            <input id="lista_telefonos1" type="tel" list="lista_telefonos2">
+            <datalist id="lista_telefonos2">
+                <option value="(4)-641201">
+                <option value="(4)-641781">
+                <option value="(4)-641561">    
+            </datalist>
+
+            <br>
+            <br>
+            <label for="time">Tiempo</label>
+            <input id="time" type="time">
+            <br>
+            <br>
+            <label for="url">Url</label>
+            <input id="url" type="url">
+            <br>
+            <br>
+            <label for="semana">Semana</label>
+            <input id="semana" type="week">
+            
+            <br>
+            <br>
+            <!--Selector de escogencia multiple-->
+            <select>
+                <option>Opcion 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            
+            
+            
+            
+            
+          
+            
+        </form>
+    </center>
+    
+    <header>
+        <div id="logotipo">Logotipo</div><!--El id nos servira para hacerle referencia a este div y darle estilos-->
+    </header>
     <nav>Esta es la barra de navegacion(menu)</nav>
     <section>Seccion principal</section>
-    <aside>Columna</aside><!--Sirve para identificar columna-->
+    <aside>
+        <div class="noticias">Noticia 1</div><!--Si queremos dar el mismo estilo a todas estas noticias podemos usar clases y estas se llaman en cada div-->
+        <div class="notocias">Noticia 2</div>
+        <div class="noticias">Noticia 3</div>
+   </aside><!--Sirve para identificar columna-->
     <article>Articulo</article><!--sirve para escribir articulos-->
     <h1>Titulo</h1>
     <h2>Titulo</h2>
