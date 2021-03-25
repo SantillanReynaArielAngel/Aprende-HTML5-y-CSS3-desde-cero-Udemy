@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades y forma</title>
+
+    <style>
+
+        header{
+            background-color: blue;
+            width:90%;
+            height: 200px;
+            margin: 20px;
+            /* border sirve para colocar borde y sus atributos son el grosor(px,etc), tipo(solid) y el color */
+            border: 3px solid red;
+            /* padding es para dar un margen interno del elemento */
+            padding: 20px; 
+        }
+
+        #logotipo{
+            width: 100px;
+            height: 50px;
+            background:green;
+            border: 3px solid black;
+            /* border-radius sirve para dar un borde al radio u es expresado en % px entre otros  */
+            border-radius: 20%;
+        }
+
+        #logotipo2{
+            /* ELEMENTO CIRCULAR: El alto como el largo deben ser iguales  y el border-radius debe ser 100%  */
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <div id="logotipo">LOGOTIPO</div>
+            <br>
+            <div id="logotipo2">Logo2</div>
+    </header>
+</body>
+</html>
