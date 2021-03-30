@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de ubicacion</title>
+
+    <style>
+        /* IMPORTANTE: primeramente se debe formatear el estilo de la pagina, es decir caambiar los balores que trae por defecto una pagina al crearse */
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Empezamos a maqueterar la pagina */
+        header{
+            /* position sirve para dar una ubicaccion */
+            position: relative;/*cuando se utiliza relative, margin tiene una gran importancia*/
+            
+            /* Uso de margin 
+            Especificando 4 valores: margin: 50px(top:superior) 10px(right:derecho) 16px(bottom:inferior) 14px(left:izquierda)
+            Especificando 2 valores: margin: vertical horizontal;
+            Especificando 1 valor: margin: 20px (mismo valor para valorvertical horizontal);
+            */
+            margin: 20px auto; 
+            width: 1000px;
+            height: 120px;
+            background: black;
+        }
+
+        #logo{
+            /* position: absolute; permite ubicar una caja interna dentro de una caja principal */
+            position: absolute;
+            top: 30px; /*si se especifica top no debe colocarse bottm y viceversa*/
+            left: 30px; /* si se especifica left no debe colocarse rigth y viceversa */
+            /* bottom: 0; */
+            /* right: 0; */
+            width: 200px;
+            height: 66px;
+            background: wheat;
+        }        
+        
+        .redsocial{
+            /* Definiendo el tamaño y color para todos */
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            background: white;
+            border-radius: 100%;
+          }
+        #red1{
+            /* Definiendo posision */
+            top: 42px;
+            right: 120px;
+        }
+        #red2{
+            /* Definiendo posision */
+            top: 42px;
+            right: 73px;
+        }
+        #red3{
+            /* Definiendo posision */
+            top: 42px;
+            right: 19px;
+        }
+
+        nav{
+            position: relative;
+            margin: auto;
+            width: 1000px;
+            height: 48px;
+            /* background: gray; */
+        }
+        .botones{
+            float: left;/*hace que los elemento floten de manera horizontal*/
+            width: 196px;
+            height: 48px;
+            background: red;
+            margin: 0px 2px;
+
+        }
+
+        #superior{
+            position: relative;
+            margin: 20px auto; 
+            width: 1000px;
+            height: 192px;
+            /* background: rebeccapurple;   se utilizo essto para tratr de alinera los li*/ 
+        }
+
+        #superior ul{ /*Contiene las cajas li*/
+            width: 1010px;
+            height: 192px;
+            /* background: rgba(202, 255, 10, 0.411); se utilizo essto para tratr de alinera los li*/
+        }
+
+        /* OTRA FORMA DE INSERTAR CSS ES POR MEDIO DE RUTAS  */
+        /* Lo siguiente hara efecto a todas las etiquetas <li>(como una clase) pero se accedera de forma anidada   */
+        #superior ul li{
+            float:left;
+            width: 326px;
+            height: 192px;
+            background: black;
+            margin-right: 10px;
+        }
+
+        section{
+            position: relative;
+            margin: 20px auto; 
+            width: 1000px;
+            height: 453px;
+            background: yellowgreen;
+        }
+        /* Lo siguiente NO ES una ruta sino hace referencia aun aside especifico */
+        aside#izq{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 453px;
+            background: #333;
+        }
+
+        aside#der{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 453px;
+            background: #333;
+        }
+
+        article{
+            position: absolute;
+            left: 200px;
+            width: 600px;
+            height: 453px;
+            background: blue;
+        }
+        footer{
+            position: relative;
+            margin: 20px auto; 
+            width: 1000px;
+            height: 70px;
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabezote -->
+    <header>
+        <div id="logo">Logo</div>
+
+        <div id="red1" class="redsocial">redes1</div>        
+        <div id="red2" class="redsocial">redes2</div>
+        <div id="red3" class="redsocial">redes3</div>
+    </header>
+
+    <!-- Navegacion -->
+    <nav>
+        <ul>
+            <li id="" class="botones">nav1</li>        
+            <li id="" class="botones">nav2</li>
+            <li id="" class="botones">nav3</li>        
+            <li id="" class="botones">nav4</li>
+            <li id="" class="botones">nav5</li>        
+        </ul>   
+    </nav>
+
+    <!-- Partesuperior -->
+    <div id="superior">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- Inicio de seccion principal  -->
+    <section>
+        <aside id="izq"></aside>
+        <article></article>
+        <aside id="der"></aside>
+    </section>
+
+    <!-- Pie de pagina  -->
+    <footer>
+
+    </footer>
+
+</body>
+</html>
