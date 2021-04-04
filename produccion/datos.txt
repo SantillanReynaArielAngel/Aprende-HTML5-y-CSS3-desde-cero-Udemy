@@ -1,0 +1,15 @@
+
+Control panel username:	b12_28304733
+Control panel password:	**********
+Control panel URL:	cpanel.byethost12.com
+MySQL username	b12_28304733
+MySQL password:	**********
+MySQL hostname:	sql101.byethost12.com
+FTP username:	b12_28304733
+FTP password:	**********
+FTP host name:	ftp.byethost12.com
+Your Website URL:	http://claymore.byethost12.com
+ 	 
+Thank you for choosing us to host your websites!
+
+byethost12.com hosting services 2021
